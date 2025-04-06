@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('partials/header') %>
+    <link rel="stylesheet" href="/styles.css" />
+    <title>Flagged Voters</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f9f9f9;
+      }
+      h1 {
+        color: #c0392b;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background: white;
+      }
+      table, th, td {
+        border: 1px solid #ccc;
+      }
+      th, td {
+        padding: 12px;
+        text-align: left;
+      }
+      footer {
+        margin-top: 50px;
+        padding: 10px;
+        text-align: center;
+        font-size: 0.9em;
+        color: #555;
+        border-top: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🚨 Flagged Voter Registrations</h1>
+    <% if (flagged.length === 0) { %>
+      <p>No fraudulent entries detected.</p>
+    <% } else { %>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Aadhaar</th>
+          <th>Reason</th>
+          <th>Photo</th>
+        </tr>
+        <% flagged.forEach(entry => { %>
+          <tr>
+            <td><%= entry.voterId.name %></td>
+            <td><%= entry.voterId.aadhaar %></td>
+            <td><%= entry.reason %></td>
+            <td>
+              <img src="/<%= entry.voterId.photo %>" width="100" />
+            </td>
+          </tr>
+        <% }) %>
+      </table>
+    <% } %>
+
+    <%- include('partials/footer') %>
+    <footer>
+      Janmat &copy; 2025 | Government of India | All Rights Reserved
+    </footer>
+  </body>
+</html>

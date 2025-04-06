@@ -1,0 +1,13 @@
+<!-- views/dashboard.ejs --> 
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <link rel="stylesheet" href="/styles.css" />
+        <title>Voter Dashboard</title> 
+    </head> 
+    <body> 
+        <h1>Welcome, <%= name %></h1> 
+        <p>Your Voter ID: <%= voterId %></p> 
+        <img src="<%= photoPath %>" alt="Your photo" width="150" onerror="this.onerror=null; this.src='/fallback.jpg';"> 
+    </body> 
+</html>

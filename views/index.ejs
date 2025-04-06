@@ -1,0 +1,23 @@
+<%- include('partials/header', { title: 'Register Voter' }) %>
+
+<link rel="stylesheet" href="/styles.css" />
+
+<h2>Register New Voter</h2>
+
+<form action="/api/voters/register" method="POST" enctype="multipart/form-data">
+  <label>Name:</label>
+  <input type="text" name="name" required /><br><br>
+
+  <label>Aadhaar Number:</label>
+  <input type="text" name="aadhaar" required /><br><br>
+
+  <label>Upload Photo:</label>
+  <input type="file" name="photo" accept="image/*" required /><br><br>
+
+  <label>Password:</label>
+  <input type="password" name="password" required><br><br>
+
+  <button type="submit">Register</button>
+</form>
+
+<%- include('partials/footer') %>

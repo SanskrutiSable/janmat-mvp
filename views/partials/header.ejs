@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title || "Janmat" %></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff9933, white, #138808);
+      padding: 20px;
+      text-align: center;
+      color: black;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    footer {
+      background: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      border-top: 1px solid #ccc;
+    }
+
+    main {
+      padding: 30px;
+      min-height: 80vh;
+    }
+
+    a {
+      color: #138808;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🇮🇳 Janmat - India’s Secure Voting System</h1>
+    <div>
+      <a href="/homelander">Home</a>
+      <a href="/voterLogin">Voter Login</a>
+      <a href="/admin/flagged">Admin Panel</a>
+    </div>
+  </header>
+  <main>

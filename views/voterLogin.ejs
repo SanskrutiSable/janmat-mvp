@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css" />
+  <title>Voter Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+    }
+    h2 {
+      text-align: center;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .error {
+      color: red;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>🧑‍💼 Voter Login</h2>
+    <% if (error) { %>
+      <p class="error"><%= error %></p>
+    <% } %>
+    <form action="/login" method="POST">
+      <label>Aadhaar Number:</label>
+      <input type="text" name="aadhaar" required />
+      <label>Password:</label>
+      <input type="password" name="password" required />
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>

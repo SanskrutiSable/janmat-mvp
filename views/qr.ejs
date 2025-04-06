@@ -1,0 +1,23 @@
+<!-- views/qr.ejs -->
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <link rel="stylesheet" href="/styles.css" />
+        <title>Voter Registered</title> 
+    </head> 
+    <body> 
+        <h1>🎉 Voter Registered Successfully!</h1> 
+        <p>Name: <%= name %></p> <p>Voter ID: <%= voterId %></p> 
+        <h2>Your QR Code:</h2> 
+        <img src="<%= qrCode %>" alt="QR Code">
+        <% if (typeof isFraudulent !== 'undefined' && isFraudulent) { %>
+            <p style="color:red;"><strong>⚠️ Potential fraud detected!</strong></p>
+          <% } %>
+          
+    <br><br> <a href="/">Register Another Voter</a>
+    <br><br><a href="/login">🔐 Go to Login</a>
+    <br><br><p>Already registered?</p>
+    <a href="/login">🔐 Login to your Dashboard</a>
+
+    </body> 
+</html>s

@@ -1,0 +1,26 @@
+<%- include('partials/header', { title: 'Flagged Voters' }) %>
+
+<h1>🚨 Flagged Voter Registrations</h1>
+
+<% if (flaggedVoters.length === 0) { %>
+  <p>No fraudulent entries detected.</p>
+<% } else { %>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Aadhaar</th>
+      <th>Reason</th>
+      <th>Photo</th>
+    </tr>
+    <% flaggedVoters.forEach(entry => { %>
+      <tr>
+        <td><%= entry.voterId.name %></td>
+        <td><%= entry.voterId.aadhaar %></td>
+        <td><%= entry.reason %></td>
+        <td><img src="/uploads/<%= entry.voterId.photo %>" width="100" /></td>
+      </tr>
+    <% }) %>
+  </table>
+<% } %>
+
+<%- include('partials/footer') %>
