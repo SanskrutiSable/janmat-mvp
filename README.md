@@ -61,4 +61,4 @@ Voter Login:
 
 ---
 
-Made with 🇮🇳 by [Your Team Name or Sanskruti Sable]
+Made with 🇮🇳 by SheSyntax
