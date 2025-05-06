@@ -42,8 +42,7 @@ Janmat is a secure and streamlined digital voter registration and authentication
 2. Login using your Aadhaar and password  
 3. Admins can view flagged suspicious entries  
 4. MVP is hosted on Google Project IDX  
-   → [Click here to view the Live MVP](https://5050-idx-janmat-1743868174548.cluster-w5vd22whf5gmav2vgkomwtc4go.cloudworkstations.dev/?monospaceUid=163666)
-{note: Project hosted via Google Project IDX. Please clone and run using npm install && npm start on port 5050, if possible}
+   → [Click here to view the Live MVP]((https://janmat.onrender.com))
 
 ## 📸 Screenshots
 home page:
