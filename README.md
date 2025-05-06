@@ -42,7 +42,7 @@ Janmat is a secure and streamlined digital voter registration and authentication
 2. Login using your Aadhaar and password  
 3. Admins can view flagged suspicious entries  
 4. MVP is hosted on Google Project IDX  
-   → [[Click here to view the Live MVP]([url](https://janmat.onrender.com))]
+   → [[Click here to view the Live MVP]([https://janmat.onrender.com/](https://janmat.onrender.com))]
 ## 📸 Screenshots
 home page:
 ![Screenshot 2025-04-06 224356](https://github.com/user-attachments/assets/4dc65025-8695-41f7-9cd2-ef301e5bca33)
